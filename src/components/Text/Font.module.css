@@ -1,0 +1,51 @@
+.root {
+    all: unset;
+    font-family: vazirmatn, sans-serif;
+}
+
+/* Defining fonts */
+.font1 {
+    font-size: var(--font-size32);
+    font-weight: var(--font-weight-block);
+}
+
+.font2 {
+    font-size: var(--font-size28);
+    font-weight: var(--font-weight-bold);
+}
+
+.font3 {
+    font-size: var(--font-size22);
+    font-weight: var(--font-weight-bold);
+}
+
+.font4 {
+    font-size: var(--font-size18);
+    font-weight: var(--font-weight-bold);
+}
+
+.font5 {
+    font-size: var(--font-size16);
+    font-weight: var(--font-weight-medium);
+}
+
+.font6 {
+    font-size: var(--font-size16);
+    font-weight: var(--font-weight-medium);
+}
+
+.font7 {
+    font-size: var(--font-size16);
+    font-weight: var(--font-weight-regular);
+}
+
+.font8 {
+    font-size: var(--font-size14);
+    font-weight: var(--font-weight-regular);
+}
+    
+.font9 {
+    font-size: var(--font-size12);
+    font-weight: var(--font-weight-regular);
+}
+

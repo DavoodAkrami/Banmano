@@ -1,0 +1,143 @@
+.root {
+    all: unset;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+/* Sizes */
+.sizeSmall {
+    font-size: var(--font-size14);
+    font-weight: var(--font-weight-regular);
+    padding: 4px 47px;
+}
+
+.sizeMedium {
+    font-size: var(--font-size16);
+    font-weight: var(--font-weight-medium);
+    padding: 6px 45.5px;
+}
+
+.sizeLarge {
+    font-size: var(--font-size16);
+    font-weight: var(--font-weight-bold);
+    padding: 8px 44px;
+}
+
+/* Variant Fill + Types */
+.variantFill.typePrimary {
+    background-color: var(--primary-color50);
+    color: var(--tertiary-color10);
+}
+
+.variantFill.typeSecondary {
+    background-color: var(--secondary-color60);
+    color: var(--tertiary-color10);
+}
+
+.variantFill.typeGray {
+    background-color: var(--gray-color10);
+    color: var(--gray-color90);
+}
+
+/* Variant Outline + Types */
+.variantOutline.typePrimary {
+    border: 1px solid var(--primary-color20);
+    background-color: transparent;
+    color: var(--primary-color60);
+}
+
+.variantOutline.typeSecondary {
+    border: 1px solid var(--secondary-color40);
+    background-color: transparent;
+    color: var(--secondary-color80);
+}
+
+.variantOutline.typeGray {
+    border: 1px solid var(--gray-color30);
+    background-color: transparent;
+    color: var(--gray-color80);
+}
+
+
+/* Hover */
+.variantFill.typePrimary:hover {
+    background-color: var(--primary-color70);
+}
+
+.variantFill.typeSecondary:hover {
+    background-color: var(--secondary-color70);
+}
+
+.variantFill.typeGray:hover {
+    background-color: var(--gray-color20);
+}
+
+.variantOutline.typePrimary:hover {
+    color: var(--primary-color80);
+    border: 1px solid var(--primary-color40);
+}
+
+.variantOutline.typeSecondary:hover {
+    color: var(--secondary-color90);
+    border: 1px solid var(--secondary-color70);
+}
+
+.variantOutline.typeGray:hover {
+    color: var(--gray-color80);
+    border: 1px solid var(--gray-color40);
+}
+
+
+/* Disabled */
+.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Disabled state for outline variants */
+.disabled.variantOutline.typePrimary {
+    border-color: var(--primary-color30);
+    color: var(--primary-color30);
+}
+
+.disabled.variantOutline.typeSecondary {
+    border-color: var(--secondary-color30);
+    color: var(--secondary-color30);
+}
+
+.disabled.variantOutline.typeGray {
+    border-color: var(--gray-color30);
+    color: var(--gray-color30);
+}
+
+.disabled.variantFill.typePrimary {
+    background-color: var(--primary-color10);
+    color: var(--primary-color30);
+}
+
+.disabled.variantFill.typeSecondary {
+    background-color: var(--secondary-color10);
+    color: var(--secondary-color30);
+}
+
+.disabled.variantFill.typeGray {
+    background-color: var(--gray-color10);
+    color: var(--gray-color30);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

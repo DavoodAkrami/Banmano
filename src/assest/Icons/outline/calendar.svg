@@ -1,0 +1,14 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="25" height="25" fill="#F2F2F3"/>
+<g clip-path="url(#clip0_2_4)">
+<rect x="-421" y="-534" width="1067.22" height="720.632" rx="40" transform="rotate(-0.301821 -421 -534)" fill="white"/>
+</g>
+<rect x="-19.9424" y="-65.0012" width="63" height="107" rx="4.5" transform="rotate(-0.301821 -19.9424 -65.0012)" stroke="#7C7C7C" stroke-dasharray="10 5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.06485 12.6851C4.06854 13.9147 4.02251 15.5922 4.78654 16.2151C5.49921 16.7962 5.99782 16.6429 7.2938 16.7311C8.59072 16.8202 11.3468 20.6167 13.4497 19.4002C14.5333 18.5388 14.6048 16.7446 14.5831 12.6297C14.5614 8.51475 14.471 6.7214 13.3784 5.8715C11.2629 4.6763 8.5469 8.50249 7.251 8.60529C5.95602 8.70718 5.45582 8.55913 4.74931 9.14764C3.99188 9.77858 4.05559 11.4555 4.06485 12.6851Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.6248 8.92285C19.9481 11.2066 19.9628 14.004 18.6636 16.2944" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<clipPath id="clip0_2_4">
+<rect x="-421" y="-534" width="1067.22" height="720.632" rx="40" transform="rotate(-0.301821 -421 -534)" fill="white"/>
+</clipPath>
+</defs>
+</svg>
