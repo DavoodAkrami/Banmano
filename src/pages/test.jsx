@@ -1,113 +1,76 @@
 import Button from '../components/Button/Button';
 import Text from '../components/Text/Text';
-import Icon from '../components/Icon/Icon';
+import {
+    IconArrowDown,
+    IconHome,
+    IconSearch,
+    IconProfile1,
+    IconProfile2,
+    IconHeart,
+    IconSend,
+    IconPlus,
+    IconMinus,
+    IconPic,
+    IconCamera,
+    IconArrowRight,
+    IconThreeDot,
+    IconVideo,
+    IconPen,
+    IconSoundOff,
+    IconSound,
+    IconBus,
+    IconCategory,
+    IconSoundLow,
+    IconStar
+} from '../components/Icon/Icon';
+
 
 const Test = () => {
     return (
         <div>
-            <div className="type" style={{display: 'flex', gap: '80px', marginBottom: '15px', marginRight: '10px'}}>
-                <span>primary</span>
-                <span>secondary</span>
-                <span>gray</span>
-            </div>
-            {/* <div className="size" style={{ marginRight: '400px' }}>
-                <div>large</div>
-                <div>medium</div>
-                <div>small</div>
-                <div>large</div>
-                <div>medium</div>
-                <div>small</div>
-            </div> */}
+            <IconArrowDown variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconHome variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconSearch variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconProfile1 variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconProfile2 variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconHeart variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconSend variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconPlus variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconMinus variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconPic variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconCamera variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconArrowRight variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconThreeDot variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconVideo variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconPen variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconSoundOff variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconSound variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconBus variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconCategory variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconSoundLow variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconStar variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
 
-            <div className='enable'>
-            <Button type='primary' size='large' variant='fill'>سلام</Button>
-            <Button type='secondary' size='large' variant='fill'>سلام</Button>
-            <Button type='gray' size='large' variant='fill'>سلام</Button><br />
-            <Button type='primary' size='medium' variant='fill'>سلام</Button>
-            <Button type='secondary' size='medium' variant='fill'>سلام</Button>
-            <Button type='gray' size='medium' variant='fill'>سلام</Button><br />
-            <Button type='primary' size='small' variant='fill'>سلام</Button>
-            <Button type='secondary' size='small' variant='fill'>سلام</Button>
-            <Button type='gray' size='small' variant='fill'>سلام</Button><br />
-
-            <Button type='primary' size='large' variant='outline'>سلام</Button>
-            <Button type='secondary' size='large' variant='outline'>سلام</Button>
-            <Button type='gray' size='large' variant='outline'>سلام</Button><br />
-            <Button type='primary' size='medium' variant='outline'>سلام</Button>
-            <Button type='secondary' size='medium' variant='outline'>سلام</Button>
-            <Button type='gray' size='medium' variant='outline'>سلام</Button><br />
-            <Button type='primary' size='small' variant='outline'>سلام</Button>
-            <Button type='secondary' size='small' variant='outline'>سلام</Button>
-            <Button type='gray' size='small' variant='outline'>سلام</Button><br /><br />
-            </div>
-
-            <div className="disable">
-            <Button type='primary' size='large' variant='fill' disabled>سلام</Button>
-            <Button type='secondary' size='large' variant='fill' disabled>سلام</Button>
-            <Button type='gray' size='large' variant='fill' disabled>سلام</Button><br />
-            <Button type='primary' size='medium' variant='fill' disabled>سلام</Button>
-            <Button type='secondary' size='medium' variant='fill' disabled>سلام</Button>
-            <Button type='gray' size='medium' variant='fill' disabled>سلام</Button><br />
-            <Button type='primary' size='small' variant='fill' disabled>سلام</Button>
-            <Button type='secondary' size='small' variant='fill' disabled>سلام</Button>
-            <Button type='gray' size='small' variant='fill' disabled>سلام</Button><br />
-
-            <Button type='primary' size='large' variant='outline' disabled>سلام</Button>
-            <Button type='secondary' size='large' variant='outline' disabled>سلام</Button>
-            <Button type='gray' size='large' variant='outline' disabled>سلام</Button><br />
-            <Button type='primary' size='medium' variant='outline' disabled>سلام</Button>
-            <Button type='secondary' size='medium' variant='outline' disabled>سلام</Button>
-            <Button type='gray' size='medium' variant='outline' disabled>سلام</Button><br />
-            <Button type='primary' size='small' variant='outline' disabled>سلام</Button>
-            <Button type='secondary' size='small' variant='outline' disabled>سلام</Button>
-            <Button type='gray' size='small' variant='outline' disabled>سلام</Button><br />
-            </div>
-
-            <div className="box" style={{display: 'inline-block', marginRight: '20px', border: '1px solid var(--gray-color10)', width: '150px', height: '150px', marginTop: '50px', borderRadius: '12px', boxShadow: 'var(--shadow-evevation1)'}}>
-                <p style={{textAlign: 'center'}}>evevation1</p>
-            </div>
-            <div className="box" style={{display: 'inline-block', marginRight: '20px', border: '1px solid var(--gray-color10)', width: '150px', height: '150px', marginTop: '50px', borderRadius: '12px', boxShadow: 'var(--shadow-evevation2)'}}>
-                <p style={{textAlign: 'center'}}>evevation2</p>
-            </div>
-            <div className="box" style={{display: 'inline-block', marginRight: '20px', border: '1px solid var(--gray-color10)', width: '150px', height: '150px', marginTop: '50px', borderRadius: '12px', boxShadow: 'var(--shadow-evevation3)'}}>
-                <p style={{textAlign: 'center'}}>evevation3</p>
-            </div>
-            <div className="box" style={{display: 'inline-block', marginRight: '20px', border: '1px solid var(--gray-color10)', width: '150px', height: '150px', marginTop: '50px', borderRadius: '12px', boxShadow: 'var(--shadow-evevation4)'}}>
-                <p style={{textAlign: 'center'}}>evevation4</p>
-            </div>
-            <div className="box" style={{display: 'inline-block', marginRight: '20px', border: '1px solid var(--gray-color10)', width: '150px', height: '150px', marginTop: '50px', borderRadius: '12px', boxShadow: 'var(--shadow-evevation5)'}}>
-                <p style={{textAlign: 'center'}}>evevation5</p>
-            </div>
-            <div className="box" style={{display: 'inline-block', marginRight: '20px', border: '1px solid var(--gray-color10)', width: '150px', height: '150px', marginTop: '50px', borderRadius: '12px', boxShadow: 'var(--shadow-evevation6)'}}>
-                <p style={{textAlign: 'center'}}>evevation6</p>
-            </div>
-            <div className="box" style={{display: 'inline-block', marginRight: '20px', border: '1px solid var(--gray-color10)', width: '150px', height: '150px', marginTop: '50px', borderRadius: '12px', boxShadow: 'var(--shadow-evevation7)'}}>
-                <p style={{textAlign: 'center'}}>evevation7</p>
-            </div>
-            <div className="box" style={{display: 'inline-block', marginRight: '20px', border: '1px solid var(--gray-color10)', width: '150px', height: '150px', marginTop: '50px', borderRadius: '12px', boxShadow: 'var(--shadow-evevation8)'}}>
-                <p style={{textAlign: 'center'}}>evevation8</p>
-            </div>
-
-            <div className="texts" style={{display: 'flex', gap: '20px', marginTop: '50px'}}>
-                <Text font='font1'>font1</Text>
-                <Text font='font2'>font2</Text>
-                <Text font='font3'>font3</Text>
-                <Text font='font4'>font4</Text>
-                <Text font='font5'>font5</Text>
-                <Text font='font6'>font6</Text> 
-                <Text font='font7'>font7</Text>
-                <Text font='font8'>font8</Text>
-                <Text font='font9'>font9</Text>
-                
-            </div>
-
-
-
-
-
-            <div className="icon">
-                <Icon name='home' variant='outline' color='var(--primary-color60)' size='large' />
-            </div>
+            <IconArrowDown variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconHome variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconSearch variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconProfile1 variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconProfile2 variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconHeart variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconSend variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconPlus variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconMinus variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconPic variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconCamera variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconArrowRight variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconThreeDot variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconVideo variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconPen variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconSoundOff variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconSound variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconBus variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconCategory variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconSoundLow variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconStar variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
         </div>
     )
 }

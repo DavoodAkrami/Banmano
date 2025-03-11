@@ -1,19 +1,2 @@
-.root {
-    all: unset;
-}
-/* sizes */
-.sizeSmall {
-    height: 18px;
-    width: 18px;
-}
 
-.sizeMedium {
-    height: 20px;
-    width: 20px;
-}
-
-.sizeLarge {
-    height: 24px;
-    width: 24px;
-}
 

@@ -2,6 +2,7 @@
     all: unset;
     cursor: pointer;
     border-radius: 8px;
+    text-align: center;
 }
 
 
@@ -40,6 +41,9 @@
     color: var(--gray-color90);
 }
 
+
+
+
 /* Variant Outline + Types */
 .variantOutline.typePrimary {
     border: 1px solid var(--primary-color20);
@@ -58,6 +62,8 @@
     background-color: transparent;
     color: var(--gray-color80);
 }
+
+
 
 
 /* Hover */
@@ -125,6 +131,7 @@
     background-color: var(--gray-color10);
     color: var(--gray-color30);
 }
+
 
 
 
