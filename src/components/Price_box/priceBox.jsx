@@ -1,54 +1,68 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import Button from '../Button/Button';
 import products from '../../data/products';
-import Icon from '../Icon/Icon';
+import { IconMinus, IconPlus } from '../Icon/Icon';
+import styles from './PriceBox.module.css';
 
-const PriceBox = (props) => {
+
+
+
+const PriceBox = ({productId}) => {
     const [number, setNumber] = useState(1);
     const [price, setPrice] = useState(0);
 
     useEffect(() => {
-        const product = products.find(product => product.id === props.productId);
+        const product = products.find(product => product.id === productId);
         if (product) {
             setPrice(product.price * number);
         } else {
             setPrice(0);
         }
-    }, [props.productId, number]);
-   
+    }, [productId, number]);
+
+    const increment = () => {
+        setNumber(number + 1);
+    }
+    
+    const decrement = () => {
+        if (number > 1) {
+            setNumber(number - 1);
+        } else if (number < 1) {
+            setNumber(1);
+        }
+    }
 
 
     return (
-       <div className="PriceBox">
-            <div className="priceHandeling">
-                <span style={{marginLeft: '8px'}}>{price}</span>
-                <span style={{color: 'var(--gray-color50)'}}>تومان</span>
-            </div>
+        <div className={styles.fixedBox}>
+            <div className={styles.container}>
+                <div className={styles.priceBox}>
+                    
+                    <div className={styles.price}>
+                        <div className={styles.priceNumber}>{price}</div>
+                        <div className={styles.priceToman}>تومان</div>
+                    </div>
 
-            <div className="numberHandeling">
-               <Button 
-                    onClick={() => setNumber(number - 1)} 
-                    disabled={number < 2} 
-                    type='primary'
-                    variant='outline'
-                    size='large'
-               >
-                    <Icon name='minus' variant='outline' color='var(--primary-color60)' size='large'/>
-                </Button>
+                    <div className={styles.quantity}>
+                        <div className={styles.numberHandeling}>
+                            <IconMinus size='32px' color='var(--gray-color50)' variant='outline' onClick={() => {decrement()}}/>
+                            <input type="number" className={styles.number} inputMode='numeric' value={number} onChange={(e) => {setNumber(e.target.value)}} />
+                            <IconPlus size='32px' color='var(--gray-color50)' variant='outline' onClick={() => {increment()}}/>
+                        </div>
 
-                <span>{number}</span>
-                
-                <Button 
-                    onClick={() => setNumber(number + 1)}
-                    type='primary'
-                    variant='outline'
-                    size='large'
-                >
-                </Button>
+                        <button className={styles.shoppingCart}>
+                            افزودن به سبد خرید
+                        </button>
+                    </div>
+
+                </div>
             </div>
-       </div>
+        </div>
     )
 }
 
 export default PriceBox;
+
+
+
+

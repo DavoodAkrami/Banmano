@@ -23,12 +23,13 @@ import {
     IconSoundLow,
     IconStar
 } from '../components/Icon/Icon';
+import PriceBox from '../components/Price_box/priceBox';
 
 
 const Test = () => {
     return (
         <div>
-            <IconArrowDown variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            {/* <IconArrowDown variant='bold' size='32px' color='red'/> <br/>
             <IconHome variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
             <IconSearch variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
             <IconProfile1 variant='bold' size='32px' color='red' onClick={() => {1+1}}/> <br/>
@@ -70,7 +71,12 @@ const Test = () => {
             <IconBus variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
             <IconCategory variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
             <IconSoundLow variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
-            <IconStar variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/>
+            <IconStar variant='outline' size='32px' color='red' onClick={() => {1+1}}/> <br/> */}
+
+            <div>
+                <PriceBox productId="Jiorno coffee" />
+            </div>
+            
         </div>
     )
 }

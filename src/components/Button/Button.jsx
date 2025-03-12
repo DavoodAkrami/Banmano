@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import styles from './Button.module.css';
 
-const Button = (props) => {
+const Button = ({size='32px', type='primary', disabled, variant='fill', className, children, props}) => {
     return (
         <button 
             onClick={props.onClick}
@@ -9,25 +9,27 @@ const Button = (props) => {
                 styles.root,
             
                 //size 
-                props.size === 'small' && styles.sizeSmall,
-                props.size === 'medium' && styles.sizeMedium,
-                props.size === 'large' && styles.sizeLarge,
+                size === 'small' && styles.sizeSmall,
+                size === 'medium' && styles.sizeMedium,
+                size === 'large' && styles.sizeLarge,
 
                 //type
-                props.type === 'primary' && styles.typePrimary,
-                props.type === 'secondary' && styles.typeSecondary,
-                props.type === 'gray' && styles.typeGray,
+                type === 'primary' && styles.typePrimary,
+                type === 'secondary' && styles.typeSecondary,
+                type === 'gray' && styles.typeGray,
 
                 //disabled
-                props.disabled && styles.disabled,
+                disabled && styles.disabled,
 
                 //variants   
-                props.variant === 'fill' && styles.variantFill,
-                props.variant === 'outline' && styles.variantOutline,
-            )}>
-                {props.iconLeft && <span className={styles.iconLeft}>{props.iconLeft}</span>}
-                {props.children}
-                {props.iconRight && <span className={styles.iconRight}>{props.iconRight}</span>}
+                variant === 'fill' && styles.variantFill,
+                variant === 'outline' && styles.variantOutline,
+
+                className && className
+            )}
+            {...props}
+            >
+                {children}
             </button>
     )
 }

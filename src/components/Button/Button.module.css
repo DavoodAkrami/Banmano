@@ -45,6 +45,10 @@
 
 
 /* Variant Outline + Types */
+.variantOutline{
+    background-color: transparent;
+}
+
 .variantOutline.typePrimary {
     border: 1px solid var(--primary-color20);
     background-color: transparent;

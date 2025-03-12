@@ -1,0 +1,77 @@
+.root {
+    all: unset;
+    cursor: pointer;
+}
+
+.priceBox {
+    border: 1px solid var(--gray-color30);
+    border-radius: 8px;
+    padding: 16px;
+    width: 239px;
+}
+
+.price {
+    margin-bottom: 10px;
+    font-size: var(--font-size16);
+    font-weight: var(--font-weight-regular);
+    display: flex;
+    gap: 8px;
+}
+
+.priceNumber {
+    color: var(--gray-color90);
+}
+
+.priceToman {
+    color: var(--gray-color50);
+}
+
+.numberHandeling {
+    border: 1px solid var(--gray-color20);
+    border-radius: 12px;
+    display: flex;
+    gap: 12px;
+    padding: 8px;
+    justify-content: center;
+}
+
+.number {
+    color: var(--gray-color90);
+    font-size: var(--font-size16);
+    font-weight: var(--font-weight-regular);
+    text-align: center;
+    border: none;
+    appearance: none;
+    width: 103px;
+}
+
+.number:focus {
+    outline: none;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.shoppingCart {
+    background-color: var(--secondary-color60);
+    color: var(--gray-color10);
+    font-size: var(--font-size14);
+    font-weight: var(--font-weight-regular);
+    padding: 4px 12px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.shoppingCart:hover {
+    background-color: var(--secondary-color70);
+    cursor: pointer;
+}
