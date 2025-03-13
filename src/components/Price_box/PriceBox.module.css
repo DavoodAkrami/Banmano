@@ -3,11 +3,17 @@
     cursor: pointer;
 }
 
+.container {
+    width: 239px;
+}
+
 .priceBox {
     border: 1px solid var(--gray-color30);
     border-radius: 8px;
+    box-sizing: border-box;
+    width: 100%;
     padding: 16px;
-    width: 239px;
+    
 }
 
 .price {
@@ -74,4 +80,56 @@ input::-webkit-outer-spin-button {
 .shoppingCart:hover {
     background-color: var(--secondary-color70);
     cursor: pointer;
+}
+
+
+.additionals ul {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    gap: 6px;
+}
+
+/* .additionals ul :nth-child(1) {
+    display: flex;
+    gap: 8px;
+    background-color: var(--gray-color20);
+    color: var(--gray-color90);
+    font-size: var(--font-size14);
+    font-weight: var(--font-weight-regular);
+    border-radius: 12px;
+    padding: 8px;
+    align-items: center;
+    text-decoration: none;
+    
+
+} */
+
+/* .additionals ul li :nth-child(1) {
+    border: 1px solid var(--secondary-color40);
+    border-radius: ;
+} */
+
+.additionals ul li{
+    background-color: var(--gray-color20);
+    color: var(--gray-color90);
+    font-size: var(--font-size14);
+    font-weight: var(--font-weight-regular);
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    line-height: 30px;
+}
+
+.additionals ul li p {
+    all: unset;
+}
+
+.additionals ul li :first-child {
+    border: 1px solid var(--secondary-color40);
+    border-radius: 50%;
+    padding: 10px;
 }

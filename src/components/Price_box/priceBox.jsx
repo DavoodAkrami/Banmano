@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import products from '../../data/products';
-import { IconMinus, IconPlus } from '../Icon/Icon';
+import { IconMinus, IconPlus, IconBus, IconProfile2} from '../Icon/Icon';
 import styles from './PriceBox.module.css';
 
 
@@ -32,7 +32,6 @@ const PriceBox = ({productId}) => {
         }
     }
 
-
     return (
         <div className={styles.fixedBox}>
             <div className={styles.container}>
@@ -54,8 +53,21 @@ const PriceBox = ({productId}) => {
                             افزودن به سبد خرید
                         </button>
                     </div>
-
                 </div>
+
+                <div className={styles.additionals}>
+                    <ul>
+                        <li>
+                            <IconBus variant='outline'size='20px' color='var(--primary-color70)'  />
+                            <p>7 روز ضمانت کالا</p>
+                        </li>
+                        <li>
+                            <IconProfile2 variant='outline' size='20px' color='var(--primary-color70)' />
+                            <p>پشتیبانی سریع</p>
+                        </li>
+                    </ul>    
+                </div>
+
             </div>
         </div>
     )
