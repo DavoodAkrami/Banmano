@@ -16,9 +16,14 @@ const products = [
         Ingredients: "دانه اسپرسو",
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
-        imageUrl1: "../../images/products/coffee-beans/jiorno-coffee-beans-1.png",
-        imageUrl2: "../../images/products/coffee-beans/jiorno-coffee-beans-2.png",
-        imageUrl3: "../../images/products/coffee-beans/jiorno-coffee-beans-3.png"
+        imageUrl: [
+            "https://s3-alpha-sig.figma.com/img/6933/efdc/04a892340894814b99ad6fbccc9164a7?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MWzcNbNfLmEwlWzZzCR4SsU4SC4tr-O9hwtK8ajHdYDrr6ez3Ilyg0hdbyNkcIkyVc7s1ETxeBledbCp3a6m~wXcWNOkMHCvraX0Uf5BaV2f-kHuAc863DPTRH2d5~DO8pO27xl8prUgkkR9G6FEeNjMB1ZTuarLrP-cOtlegMIp2wXQPnB4gkT1LVRSi0slGdlQx17l9255m7RDJbEfH5tLAXgn-oQMhPZ7DqxLo3it1aRFO1iQHWIIgSsCqhdRiIjqMGKg0BdJBGEXTlHTC72XZOfz1ea4JhkfjORCyU1Np2w0EFmUZyoF1~ar4nb0wnzj6MFigv9Uq8X8b6WYvA__",
+            "https://s3-alpha-sig.figma.com/img/7bc9/73ed/025b7dffc54e7bf84aae81dc7cf09932?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=q5VaunlOzd4cbzG4kVQAmEAy09Br5U6DLJ2N8uGYd04y7o9CPrPWr4CN2LIBYArkZIT1fS6MspFBmfYVhHZAazXxEwY9d26KnQJ3N5w7hOQqMKBh~IIf-sTgKOd3tjJ8Tx-xe2DRX~W~RjA4aW2~GoanXE2~KoxQZV6W-wvqPxlKxYV7UXKnP7WpZ9LZSKCvT3wPJ60Fdewjc4JJhfjNDGscgxtexNdYz7zTP3Srw0z19atZc1b69Fi5VAUi3TujYMgRksIQ8wHqG7s9DUfx~av6~j4x2jU2AEZ9ybK0hd~wvOY3q-EET1zQ2SggDIasiUkPepZC4WjjFAIonvjE1w__",
+            "https://s3-alpha-sig.figma.com/img/f1e3/6c4a/d4c9f3646f157ab0e8a6db2f8cde5225?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=D1nUG71k5yscqTJ0Q2NbQxE6aotdjLQqfA1O8w34fH1rJQqAAVtn1z4-ZK6vW~q8Wy3Y0PJSOSrpLS2ifRP~Ar2kcequplFp~UmSBZHj~~USCTU1BUFW49ZUUmQlIBAZFtfSEY79ye4gsd7H~Bs0cwkO8J79lFqTmz3HxbvV-EAYqgImkJBZLi4tQB03lCIj~~B3Kr3XylEqEGRT5C0CLPUjElc-12pMHGLfwM9JEVUbrXDxi-rb45vIaKyjYghB0yBNOrWZ9DBAY-ghy6VyBa-470F7Agp963qW-VPBnHo92YdGezr2ugoWyEdbdGImAZMxKVbxi4Y88WTTfizWFw__",
+            "https://s3-alpha-sig.figma.com/img/6933/efdc/04a892340894814b99ad6fbccc9164a7?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MWzcNbNfLmEwlWzZzCR4SsU4SC4tr-O9hwtK8ajHdYDrr6ez3Ilyg0hdbyNkcIkyVc7s1ETxeBledbCp3a6m~wXcWNOkMHCvraX0Uf5BaV2f-kHuAc863DPTRH2d5~DO8pO27xl8prUgkkR9G6FEeNjMB1ZTuarLrP-cOtlegMIp2wXQPnB4gkT1LVRSi0slGdlQx17l9255m7RDJbEfH5tLAXgn-oQMhPZ7DqxLo3it1aRFO1iQHWIIgSsCqhdRiIjqMGKg0BdJBGEXTlHTC72XZOfz1ea4JhkfjORCyU1Np2w0EFmUZyoF1~ar4nb0wnzj6MFigv9Uq8X8b6WYvA__",
+            "https://s3-alpha-sig.figma.com/img/7bc9/73ed/025b7dffc54e7bf84aae81dc7cf09932?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=q5VaunlOzd4cbzG4kVQAmEAy09Br5U6DLJ2N8uGYd04y7o9CPrPWr4CN2LIBYArkZIT1fS6MspFBmfYVhHZAazXxEwY9d26KnQJ3N5w7hOQqMKBh~IIf-sTgKOd3tjJ8Tx-xe2DRX~W~RjA4aW2~GoanXE2~KoxQZV6W-wvqPxlKxYV7UXKnP7WpZ9LZSKCvT3wPJ60Fdewjc4JJhfjNDGscgxtexNdYz7zTP3Srw0z19atZc1b69Fi5VAUi3TujYMgRksIQ8wHqG7s9DUfx~av6~j4x2jU2AEZ9ybK0hd~wvOY3q-EET1zQ2SggDIasiUkPepZC4WjjFAIonvjE1w__",
+            "https://s3-alpha-sig.figma.com/img/f1e3/6c4a/d4c9f3646f157ab0e8a6db2f8cde5225?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=D1nUG71k5yscqTJ0Q2NbQxE6aotdjLQqfA1O8w34fH1rJQqAAVtn1z4-ZK6vW~q8Wy3Y0PJSOSrpLS2ifRP~Ar2kcequplFp~UmSBZHj~~USCTU1BUFW49ZUUmQlIBAZFtfSEY79ye4gsd7H~Bs0cwkO8J79lFqTmz3HxbvV-EAYqgImkJBZLi4tQB03lCIj~~B3Kr3XylEqEGRT5C0CLPUjElc-12pMHGLfwM9JEVUbrXDxi-rb45vIaKyjYghB0yBNOrWZ9DBAY-ghy6VyBa-470F7Agp963qW-VPBnHo92YdGezr2ugoWyEdbdGImAZMxKVbxi4Y88WTTfizWFw__"
+        ]
     },
     {
         name: "دانه قهوه اسپرسو لاوازا",
@@ -33,9 +38,11 @@ const products = [
         Ingredients: "دانه اسپرسو",
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
-        imageUrl1: "../../images/products/coffee-beans/lavazza-coffee-beans-1.png",
-        imageUrl2: "../../images/products/coffee-beans/lavazza-coffee-beans-2.png",
-        imageUrl3: "../../images/products/coffee-beans/lavazza-coffee-beans-3.png"
+        imageUrl: [
+            "../assest/images/lavazza-coffee-beans-1.png",
+            "../assest/images/lavazza-coffee-beans-2.png",
+            "../assest/images/lavazza-coffee-beans-3.png"
+        ]
     },
     {
         name: "دانه قهوه اسپرسو ایلی",
@@ -50,9 +57,11 @@ const products = [
         Ingredients: "دانه اسپرسو",
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
-        imageUrl1: "../../images/products/coffee-beans/illy-coffee-beans-1.png",
-        imageUrl2: "../../images/products/coffee-beans/illy-coffee-beans-2.png",
-        imageUrl3: "../../images/products/coffee-beans/illy-coffee-beans-3.png"
+        imageUrl: [
+            "../../images/products/coffee-beans/illy-coffee-beans-1.png",
+            "../../images/products/coffee-beans/illy-coffee-beans-2.png",
+            "../../images/products/coffee-beans/illy-coffee-beans-3.png"
+        ]
     },
     {
         name: "دانه قهوه اسپرسو سگافردو",
@@ -67,9 +76,11 @@ const products = [
         Ingredients: "دانه اسپرسو",
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
-        imageUrl1: "../../images/products/coffee-beans/segafredo-coffee-beans-1.png",
-        imageUrl2: "../../images/products/coffee-beans/segafredo-coffee-beans-2.png",
-        imageUrl3: "../../images/products/coffee-beans/segafredo-coffee-beans-3.png"
+        imageUrl: [
+            "../../images/products/coffee-beans/segafredo-coffee-beans-1.png",
+            "../../images/products/coffee-beans/segafredo-coffee-beans-2.png",
+            "../../images/products/coffee-beans/segafredo-coffee-beans-3.png"
+        ]
     },
     {
         name: "دانه قهوه اسپرسو کیمبو",
@@ -84,9 +95,11 @@ const products = [
         Ingredients: "دانه اسپرسو",
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
-        imageUrl1: "../../images/products/coffee-beans/kimbo-coffee-beans-1.png",
-        imageUrl2: "../../images/products/coffee-beans/kimbo-coffee-beans-2.png",
-        imageUrl3: "../../images/products/coffee-beans/kimbo-coffee-beans-3.png"
+        imageUrl: [
+            "../../images/products/coffee-beans/kimbo-coffee-beans-1.png",
+            "../../images/products/coffee-beans/kimbo-coffee-beans-2.png",
+            "../../images/products/coffee-beans/kimbo-coffee-beans-3.png"
+        ]
     },
     {
         name: "دانه قهوه اسپرسو مهمت افندی",
@@ -101,9 +114,11 @@ const products = [
         Ingredients: "دانه اسپرسو",
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
-        imageUrl1: "../../images/products/coffee-beans/mehmet-coffee-beans-1.png",
-        imageUrl2: "../../images/products/coffee-beans/mehmet-coffee-beans-2.png",
-        imageUrl3: "../../images/products/coffee-beans/mehmet-coffee-beans-3.png"
+        imageUrl: [
+            "../../images/products/coffee-beans/mehmet-coffee-beans-1.png",
+            "../../images/products/coffee-beans/mehmet-coffee-beans-2.png",
+            "../../images/products/coffee-beans/mehmet-coffee-beans-3.png"
+        ]
     },
     {
         name: "دانه قهوه اسپرسو پلی کافه",
@@ -118,9 +133,11 @@ const products = [
         Ingredients: "دانه اسپرسو",
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
-        imageUrl1: "../../images/products/coffee-beans/pele-coffee-beans-1.png",
-        imageUrl2: "../../images/products/coffee-beans/pele-coffee-beans-2.png",
-        imageUrl3: "../../images/products/coffee-beans/pele-coffee-beans-3.png"
+        imageUrl: [
+            "../../images/products/coffee-beans/pele-coffee-beans-1.png",
+            "../../images/products/coffee-beans/pele-coffee-beans-2.png",
+            "../../images/products/coffee-beans/pele-coffee-beans-3.png"
+        ]
     },
     {
         name: "دانه قهوه اسپرسو بونجورنو",
@@ -135,9 +152,11 @@ const products = [
         Ingredients: "دانه اسپرسو",
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
-        imageUrl1: "../../images/products/coffee-beans/bonjourno-coffee-beans-1.png",
-        imageUrl2: "../../images/products/coffee-beans/bonjourno-coffee-beans-2.png",
-        imageUrl3: "../../images/products/coffee-beans/bonjourno-coffee-beans-3.png"
+        imageUrl: [
+            "../../images/products/coffee-beans/bonjourno-coffee-beans-1.png",
+            "../../images/products/coffee-beans/bonjourno-coffee-beans-2.png",
+            "../../images/products/coffee-beans/bonjourno-coffee-beans-3.png"
+        ]
     },
     {
         name: "دانه قهوه اسپرسو دانسی",
@@ -152,9 +171,11 @@ const products = [
         Ingredients: "دانه اسپرسو",
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
-        imageUrl1: "../../images/products/coffee-beans/danesi-coffee-beans-1.png",
-        imageUrl2: "../../images/products/coffee-beans/danesi-coffee-beans-2.png",
-        imageUrl3: "../../images/products/coffee-beans/danesi-coffee-beans-3.png"
+        imageUrl: [
+            "../../images/products/coffee-beans/danesi-coffee-beans-1.png",
+            "../../images/products/coffee-beans/danesi-coffee-beans-2.png",
+            "../../images/products/coffee-beans/danesi-coffee-beans-3.png"
+        ]
     },
     {
         name: "قهوه فوری نسکافه گلد",
@@ -169,9 +190,11 @@ const products = [
         Ingredients: "قهوه فوری",
         category: category_instantcoffee_name,
         categoryId: category_instantcoffee_id,
-        imageUrl1: "../../images/products/instant-coffee/nescafe-gold-1.png",
-        imageUrl2: "../../images/products/instant-coffee/nescafe-gold-2.png",
-        imageUrl3: "../../images/products/instant-coffee/nescafe-gold-3.png"
+        imageUrl: [
+            "../../images/products/instant-coffee/nescafe-gold-1.png",
+            "../../images/products/instant-coffee/nescafe-gold-2.png",
+            "../../images/products/instant-coffee/nescafe-gold-3.png"
+        ]
     },
     {
         name: "قهوه فوری جاکوبز",
@@ -186,9 +209,11 @@ const products = [
         Ingredients: "قهوه فوری",
         category: category_instantcoffee_name,
         categoryId: category_instantcoffee_id,
-        imageUrl1: "../../images/products/instant-coffee/jacobs-1.png",
-        imageUrl2: "../../images/products/instant-coffee/jacobs-2.png",
-        imageUrl3: "../../images/products/instant-coffee/jacobs-3.png"
+        imageUrl: [
+            "../../images/products/instant-coffee/jacobs-1.png",
+            "../../images/products/instant-coffee/jacobs-2.png",
+            "../../images/products/instant-coffee/jacobs-3.png"
+        ]
     },
     {
         name: "قهوه فوری مولتی کافه",
@@ -203,9 +228,11 @@ const products = [
         Ingredients: "قهوه فوری",
         category: category_instantcoffee_name,
         categoryId: category_instantcoffee_id,
-        imageUrl1: "../../images/products/instant-coffee/multi-cafe-1.png",
-        imageUrl2: "../../images/products/instant-coffee/multi-cafe-2.png",
-        imageUrl3: "../../images/products/instant-coffee/multi-cafe-3.png"
+        imageUrl: [
+            "../../images/products/instant-coffee/multi-cafe-1.png",
+            "../../images/products/instant-coffee/multi-cafe-2.png",
+            "../../images/products/instant-coffee/multi-cafe-3.png"
+        ]
     },
     {
         name: "قهوه آسیاب شده لاوازا",
@@ -220,9 +247,11 @@ const products = [
         Ingredients: "قهوه آسیاب شده",
         category: category_groundcoffee_name,
         categoryId: category_groundcoffee_id,
-        imageUrl1: "../../images/products/ground-coffee/lavazza-ground-1.png",
-        imageUrl2: "../../images/products/ground-coffee/lavazza-ground-2.png",
-        imageUrl3: "../../images/products/ground-coffee/lavazza-ground-3.png"
+        imageUrl: [
+            "../../images/products/ground-coffee/lavazza-ground-1.png",
+            "../../images/products/ground-coffee/lavazza-ground-2.png",
+            "../../images/products/ground-coffee/lavazza-ground-3.png"
+        ]
     },
     {
         name: "قهوه آسیاب شده ایلی",
@@ -237,9 +266,11 @@ const products = [
         Ingredients: "قهوه آسیاب شده",
         category: category_groundcoffee_name,
         categoryId: category_groundcoffee_id,
-        imageUrl1: "../../images/products/ground-coffee/illy-ground-1.png",
-        imageUrl2: "../../images/products/ground-coffee/illy-ground-2.png",
-        imageUrl3: "../../images/products/ground-coffee/illy-ground-3.png"
+        imageUrl: [
+            "../../images/products/ground-coffee/illy-ground-1.png",
+            "../../images/products/ground-coffee/illy-ground-2.png",
+            "../../images/products/ground-coffee/illy-ground-3.png"
+        ]
     },
     {
         name: "قهوه آسیاب شده سگافردو",
@@ -254,9 +285,11 @@ const products = [
         Ingredients: "قهوه آسیاب شده",
         category: category_groundcoffee_name,
         categoryId: category_groundcoffee_id,
-        imageUrl1: "../../images/products/ground-coffee/segafredo-ground-1.png",
-        imageUrl2: "../../images/products/ground-coffee/segafredo-ground-2.png",
-        imageUrl3: "../../images/products/ground-coffee/segafredo-ground-3.png"
+        imageUrl: [
+            "../../images/products/ground-coffee/segafredo-ground-1.png",
+            "../../images/products/ground-coffee/segafredo-ground-2.png",
+            "../../images/products/ground-coffee/segafredo-ground-3.png"
+        ]
     }
 ]
 

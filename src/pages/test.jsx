@@ -24,6 +24,7 @@ import {
     IconStar
 } from '../components/Icon/Icon';
 import PriceBox from '../components/Price_box/priceBox';
+import Slider from '../components/slider/slider';
 
 
 const Test = () => {
@@ -75,6 +76,10 @@ const Test = () => {
 
             <div>
                 <PriceBox productId="Jiorno coffee" />
+            </div>
+
+            <div>
+                <Slider productId="Jiorno coffee" />
             </div>
             
         </div>

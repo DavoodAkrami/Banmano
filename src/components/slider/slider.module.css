@@ -1,0 +1,86 @@
+.root {
+    all: unset;
+}
+
+.selectedImage {
+    width: 300px;
+    height: 300px;
+    border: 1px solid var(--primary-color60);
+    border-radius: 20px;
+}
+
+.selectedImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    flex: 2;
+    padding: 2px 32px;
+}
+
+.slide {
+    display: flex;
+    gap: 13px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    transition: transform 0.3s ease;
+}
+
+.slideItem {
+    border: 1px solid var(--primary-color60);
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    border-radius: 8px;
+}
+
+.slideItem img {
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(205, 168, 147, 0.68);
+    z-index: 1;
+}
+
+.handlePrevious,
+.handleNext {
+    border: 1px solid var(--primary-color50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 68px;
+    cursor: pointer;
+}
+
+.handlePrevious:hover,
+.handleNext:hover {
+    background-color: var(--primary-color50);
+}   
+
+
+
+
+
+
+
+

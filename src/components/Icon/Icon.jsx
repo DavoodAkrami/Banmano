@@ -1108,6 +1108,77 @@ const IconStar = ({ size = '24px', color = 'currentColor', variant='bold', onCli
     }
 };
 
+const IconstrokeLeft = ({ size = '24px', color = 'currentColor', variant='bold', onClick }) => {
+    const style = onClick ? { cursor: 'pointer' } : {};
+    if (variant === 'outline') {
+        return (
+        <svg 
+        width={size} 
+        height={size} 
+        viewBox="0 0 6 8" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        onClick={onClick}
+        style={style}
+        >
+        <path d="M4.5 1L1.5 4L4.5 7" stroke={color} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        )
+    } else if (variant === 'bold') {
+        return (
+            <svg 
+            width={size} 
+            height={size} 
+            viewBox="0 0 6 8" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            onClick={onClick}
+            style={style}
+            >
+            <path d="M4.5 1L1.5 4L4.5 7" stroke={color} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        )
+    } else {
+        return null;
+    }
+};
+
+const IconstrokeRight = ({ size = '24px', color = 'currentColor', variant='bold', onClick }) => {
+    const style = onClick ? { cursor: 'pointer' } : {};
+    if (variant === 'outline') {
+        return (
+            <svg 
+            width={size} 
+            height={size} 
+            viewBox="0 0 6 8" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            onClick={onClick}
+            style={style}
+            >
+            <path d="M1.5 1L4.5 4L1.5 7" stroke={color} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+        )
+    } else if (variant === 'bold') {
+        return (
+            <svg 
+            width={size} 
+            height={size} 
+            viewBox="0 0 6 8" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            onClick={onClick}
+            style={style}
+            >
+            <path d="M1.5 1L4.5 4L1.5 7" stroke={color} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        )
+    } else {
+        return null;
+    }
+};
+
 export {
     IconArrowDown,
     IconHome,
@@ -1129,7 +1200,9 @@ export {
     IconBus,
     IconCategory,
     IconSoundLow,
-    IconStar
+    IconStar,
+    IconstrokeLeft,
+    IconstrokeRight
 };
 
 
