@@ -1,9 +1,9 @@
-import Button from "./components/Button/Button"
-import Test from "./pages/test"
+import ProductPage from "./pages/ProductPage/ProductPage";
+
 
 const App = () => {
   return (
-    <Test />
+    <ProductPage productId={"Jiorno coffee"}/>
   )
 }
 

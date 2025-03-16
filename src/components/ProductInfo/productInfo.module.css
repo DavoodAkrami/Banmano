@@ -1,0 +1,96 @@
+;.root {
+    all: unset;
+}
+
+.container {
+    width: 373px;
+}
+
+.productName {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.englishName {
+    color: var(--gray-color60);
+    font-size: var(--font-size14);
+    font-weight: var(--font-weight-regular);
+    width: 100%;
+}
+
+.persianName {
+    color: var(--gray-color90);
+    font-size: var(--font-size22);
+    font-weight: var(--font-weight-bold);
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.productScore {
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+hr {
+    width: 100%;
+    color: var(--gray-color30);
+
+}
+
+.CatSKU {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--gray-color60);
+    font-size: var(--font-size12);
+    font-weight: var(--font-weight-regular);
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
+
+.category {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-weight: var(--font-weight-regular);
+    position: relative;
+}
+
+.sku {
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.productDetailInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+
+.species,
+.caffeineContent,
+.origin,
+.ingredients {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: var(--gray-color20);
+    font-size: var(--font-size12);
+    font-weight: var(--font-weight-regular);
+}
+
+
+
+
+
