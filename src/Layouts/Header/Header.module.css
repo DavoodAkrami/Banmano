@@ -1,0 +1,24 @@
+.root {
+    all: unset;
+}
+
+.header {
+    display: flex;
+}
+
+.menu,
+.profile,
+.home {
+    cursor: pointer;
+    margin: 10px 25px;
+}
+
+.banmano h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    color: var(--primary-color60);
+    font-size: var(--font-size28);
+    margin: 10px;
+}
