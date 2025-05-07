@@ -41,7 +41,7 @@ const Header = () => {
                     <IconHome size="32px" color="var(--primary-color60)" onClick={() => navigate('banmano')}/>
                 </div>
                 <div className={styles.profile}>
-                    <IconProfile1 size="32px" color="var(--primary-color60)" onClick={() => navigate('banmano/users') } /> 
+                    <IconProfile1 size="32px" color="var(--primary-color60)" onClick={() => navigate('banmano/panel') } /> 
                 </div>
                 <div className={styles.menu}>
                     <IconThreeDot size="32px" color="var(--primary-color60)" />

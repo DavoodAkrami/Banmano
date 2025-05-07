@@ -2,10 +2,8 @@ import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom"
 import ProductPage from "./pages/client/ProductPage/ProductPage"
 import Auth from "./pages/client/Auth/Auth"
 import Home from "./pages/client/Home/Home"
-import links from "./routes/links"
-import ProfileUsers from "./pages/panel/Profile/ProfileUser/ProfileUsers"
 import Header from "./Layouts/Header/Header"
-import { useContext } from "react"
+import MyProfile from "./pages/panel/Profile/MyProfile/MyProfile"
 
 const Layout = ({ children }) => {
   return (
@@ -26,7 +24,7 @@ const App = () => {
           <Route path="Banmano/" element={<Home />} />
           <Route path="Banmano/auth" element={<Auth />} />
           <Route path="/product/:productId" element={<ProductPage />} />
-          <Route path="Banmano/users" element={<ProfileUsers />} />
+          <Route path="Banmano/panel" element={<MyProfile />} />
         </Route>
       </Routes>
     </BrowserRouter>
