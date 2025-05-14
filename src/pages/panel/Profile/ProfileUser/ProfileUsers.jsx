@@ -20,7 +20,6 @@ const UserFormManagement = ({onSubmit, data, onCancel, hideCloseButton = false, 
         
         e.preventDefault()
         if (isCreateMode) {
-            // create user
             fetch('http://localhost:8000/api/users', {
                 method: 'POST',
                 headers: {
@@ -40,8 +39,6 @@ const UserFormManagement = ({onSubmit, data, onCancel, hideCloseButton = false, 
                 }
             })
         } else {
-            // update user
-             // create user
              fetch('http://localhost:8000/api/users/'+ data.id, {
                 method: 'PUT',
                 headers: {
@@ -80,7 +77,6 @@ const UserFormManagement = ({onSubmit, data, onCancel, hideCloseButton = false, 
 }
 
 const ProfileUsers = () => {
-    console.log('ProfileUsers');
     
     const [users, setUsers] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -138,8 +134,6 @@ const ProfileUsers = () => {
                 <Modal 
                     hideCloseButton={true}
                     hideSubmitButton={true}
-                    // onClose={() => setCreateUserModal(false)} 
-                    // onSubmit={() => {}} 
                     title="Create User" 
                     description={
                         <UserFormManagement 
@@ -158,8 +152,6 @@ const ProfileUsers = () => {
                 <Modal 
                     hideCloseButton={true}
                     hideSubmitButton={true}
-                    // onClose={() => setEditUser(null)} 
-                    // onSubmit={() => {}} 
                     title="Edit User" 
                     description={
                         <UserFormManagement 
