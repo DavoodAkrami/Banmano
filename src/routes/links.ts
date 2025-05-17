@@ -1,13 +1,13 @@
+import Product from "../data/products";
+
 const links = {
     client: {
-        home: "/",
-        auth: "/auth",
-        product: "/product",
+        home: "Banmano/",
+        auth: "Banmano/auth",
+        product: "/product/:productId",
     },
     panel: {
-        home: "/panel",
-        profile: "/panel/profile",
-        users: "/panel/users",
+        panel: "Banmano/panel",
     },
 }
 
