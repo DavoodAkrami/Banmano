@@ -13,9 +13,10 @@ import {
     TextField,
     Typography
 } from '@mui/material';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import links from '../../../routes/links';
+import { UserContext } from '../../../context/UsersContext';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -24,6 +25,7 @@ const Login = () => {
     const [successful, setSuccessful] = useState('idle');
     const [loginData, setLoginData] = useState(null);
     const navigate = useNavigate();
+    const { setUser } = useContext(UserContext);
 
     async function handleError(error) {
         console.error('ورود ناموفق:', error);
@@ -51,6 +53,9 @@ const Login = () => {
                 setSuccessful('success');
                 setLoginData(data);
                 localStorage.setItem('token', data.token);
+                localStorage.setItem('user', JSON.stringify(data.user));
+                setUser(data.user);
+                navigate('/Banmano');
             } else {
                 console.log('ورود ناموفق:', data);
                 setSuccessful('error');
@@ -62,52 +67,52 @@ const Login = () => {
             setLoading(false);
         }
     }
-    
+
     return (
-            <Box sx={{ maxWidth: '400px', margin: '0 auto', padding: '20px' }}>
-              <Typography variant="h5" component="h2" gutterBottom>
+        <Box sx={{ maxWidth: '400px', margin: '0 auto', padding: '20px' }}>
+            <Typography variant="h5" component="h2" gutterBottom>
                 ورود
-              </Typography>
-              <Box component="form" onSubmit={handleLogin} noValidate>
+            </Typography>
+            <Box component="form" onSubmit={handleLogin} noValidate>
                 <TextField
-                  margin="normal"
-                  required
-                  fullWidth
-                  id="email"
-                  label="آدرس ایمیل"
-                  name="email"
-                  autoComplete="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                    margin="normal"
+                    required
+                    fullWidth
+                    id="email"
+                    label="آدرس ایمیل"
+                    name="email"
+                    autoComplete="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                 />
                 <TextField
-                  margin="normal"
-                  required
-                  fullWidth
-                  name="password"
-                  label="رمز عبور"
-                  type="password"
-                  id="password"
-                  autoComplete="current-password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
+                    margin="normal"
+                    required
+                    fullWidth
+                    name="password"
+                    label="رمز عبور"
+                    type="password"
+                    id="password"
+                    autoComplete="current-password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                 />
                 <Button
-                  type="submit"
-                  fullWidth
-                  variant="contained"
-                  sx={{ mt: 3, mb: 2 }}
-                  disabled={loading}
-                  color="primary"
-                  onClick={() => navigate("/Banmano")}
+                    type="submit"
+                    fullWidth
+                    variant="contained"
+                    sx={{ mt: 3, mb: 2 }}
+                    disabled={loading}
+                    color="primary"
                 >
-                  {loading ? <CircularProgress size={24} /> : 'ورود'}
+                    {loading ? <CircularProgress size={24} /> : 'ورود'}
                 </Button>
-              </Box>
+                {successful === 'success' && <Alert severity="success">ورود موفقیت‌آمیز</Alert>}
+                {successful === 'error' && <Alert severity="error">ورود ناموفق</Alert>}
             </Box>
-          );
+        </Box>
+    );
 };
-
 
 const SignUp = () => {
     const [name, setName] = useState('');
@@ -115,7 +120,9 @@ const SignUp = () => {
     const [password, setPassword] = useState('');
     const [loading, setLoading] = useState(false);
     const [successful, setSuccessful] = useState('idle');
-    const [signUpData, setSignUpData] = useState(null); 
+    const [signUpData, setSignUpData] = useState(null);
+    const { setUser } = useContext(UserContext);
+    const navigate = useNavigate();
 
     async function handleError(error) {
         console.error('ورود ناموفق:', error);
@@ -142,6 +149,9 @@ const SignUp = () => {
                 console.log('ثبت‌نام موفقیت‌آمیز:', data);
                 setSuccessful('success');
                 localStorage.setItem('token', data.token);
+                localStorage.setItem('user', JSON.stringify(data.user));
+                setUser(data.user);
+                navigate('/Bamnano');
             } else {
                 console.log('ثبت‌نام ناموفق:', data);
                 setSuccessful('error');

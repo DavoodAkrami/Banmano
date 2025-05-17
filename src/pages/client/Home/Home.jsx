@@ -14,7 +14,7 @@ const Home = () => {
                     <div 
                         key={product.id} 
                         className={styles.productBox} 
-                        onClick={() => navigate(`${links.client.product}/${product.id}`)}
+                        onClick={() => navigate(`${links.client.product.replace(':productId', product.id)}`)}
                     >
                         <div>
                             <img src={product.imageUrl[0]} alt={product.name} />

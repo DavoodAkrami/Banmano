@@ -1,6 +1,6 @@
 import Slider from "../../../components/slider/slider";
 import ProductInfo from "../../../components/ProductInfo/ProductInfo";
-import PriceBox from "../../../components/Price_box/priceBox";
+import PriceBox from "../../../components/PriceBox/priceBox";
 import React from "react";
 import styles from "./ProductPage.module.css";
 import { useParams } from "react-router-dom";

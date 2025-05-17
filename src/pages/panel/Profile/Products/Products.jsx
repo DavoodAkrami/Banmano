@@ -31,9 +31,9 @@ const ProductForm = ({onSubmit, data, onCancel, hideCloseButton = false, cancelB
                 body: JSON.stringify(form)
             })
             .then(response => {
-                console.log('ProductForm: Create - Received response from server', response);
                 if (!response.ok) {
-                    return response.json().then(errData => {
+                    return response.json()
+                    .then(errData => {
                         console.error('ProductForm: Create - Server error response body:', errData);
                         throw new Error(`Server responded with ${response.status}: ${errData.message || response.statusText}`);
                     }).catch(() => {
@@ -53,7 +53,6 @@ const ProductForm = ({onSubmit, data, onCancel, hideCloseButton = false, cancelB
                 console.error('ProductForm: Create - Error during fetch operation:', error);
             });
         } else {
-            console.log('ProductForm: Attempting to update product with ID:', data.id, 'Data:', form);
             fetch(`http://localhost:8000/api/products/${data.id}`, {
                 method: 'PUT',
                 headers: {
@@ -64,10 +63,12 @@ const ProductForm = ({onSubmit, data, onCancel, hideCloseButton = false, cancelB
             })
             .then(response => {
                 if (!response.ok) {
-                    return response.json().then(errData => {
+                    return response.json()
+                    .then(errData => {
                         console.error('ProductForm: Update - Server error response body:', errData);
                         throw new Error(`Server responded with ${response.status}: ${errData.message || response.statusText}`);
-                    }).catch(() => {
+                    })
+                    .catch(() => {
                         throw new Error(`Server responded with ${response.status}: ${response.statusText}`);
                     });
                 }
