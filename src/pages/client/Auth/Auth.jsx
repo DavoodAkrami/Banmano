@@ -151,7 +151,7 @@ const SignUp = () => {
                 localStorage.setItem('token', data.token);
                 localStorage.setItem('user', JSON.stringify(data.user));
                 setUser(data.user);
-                navigate('/Bamnano');
+                navigate('/Banmano');
             } else {
                 console.log('ثبت‌نام ناموفق:', data);
                 setSuccessful('error');
