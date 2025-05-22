@@ -7,6 +7,8 @@ import Header from "./Layouts/Header/Header"
 import MyProfile from "./pages/panel/Profile/MyProfile/MyProfile"
 import links from "./routes/links"
 import { useContext } from "react";
+import Footer from "./Layouts/Footer/Footer"
+
 
 
 const Layout = ({ children }) => {
@@ -23,6 +25,7 @@ const PanelLayout = ({ children }) => {
     <>
     <Header />
     {children}
+    <Footer />
     </>
   )
 }

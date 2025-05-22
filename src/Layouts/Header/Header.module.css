@@ -57,3 +57,7 @@
 .signIn:hover {
     background-color: var(--primary-color80);
 }
+
+.breadcrumb {
+    direction: ltr;
+}

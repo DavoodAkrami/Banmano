@@ -1,0 +1,79 @@
+.root {
+    background-color: var(--primary-color90);
+    color: var(--gray-color10);
+    padding: 2rem 0;
+    margin-top: 2rem;
+    direction: ltr;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color40);
+}
+
+.contactUs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contactInfo h3 {
+    color: var(--primary-color40);
+    margin-bottom: 0.5rem;
+}
+
+.contactInfo p {
+    color: var(--gray-color20);
+    font-size: 0.9rem;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialLinks a {
+    color: var(--primary-color40);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.socialLinks a:hover {
+    color: var(--primary-color20);
+}
+
+.copywrite {
+    text-align: center;
+    color: var(--gray-color40);
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .contactUs {
+        flex: 1;
+        max-width: 600px;
+    }
+}
