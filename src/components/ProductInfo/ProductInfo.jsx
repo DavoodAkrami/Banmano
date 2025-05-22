@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./ProductInfo.module.css";
 import products from "../../data/products";
+import styles from "./ProductInfo.module.css";
 import { useState, useEffect } from "react";
 import { IconStar, IconCategory } from "../Icon/Icon";
 
