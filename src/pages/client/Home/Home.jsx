@@ -2,12 +2,19 @@ import Products from "../../../data/products"
 import styles from "./Home.module.css"
 import { useNavigate } from "react-router-dom"
 import links from "../../../routes/links"
+import Button from "../../../components/Button/Button"
 
 const Home = () => {
     const navigate = useNavigate()
 
     return (
         <div className={styles.root}>
+            <div className={styles.AboutMe}>
+                <h2>About Me</h2>
+                <button className={styles.buttonAboutMe} onClick={() => window.open('https://portfolio-one-azure-17.vercel.app/', '_blank')}>
+                    My Portofolio
+                </button>
+            </div>
             <h2>محصولات</h2>
             <div className={styles.home}>
                 {Products.map(product => (

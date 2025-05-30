@@ -8,6 +8,7 @@ import MyProfile from "./pages/panel/Profile/MyProfile/MyProfile"
 import links from "./routes/links"
 import { useContext } from "react";
 import Footer from "./Layouts/Footer/Footer"
+import AiChatBot from "./components/AiChatBot/AiChatBot";
 
 
 
@@ -23,9 +24,9 @@ const Layout = ({ children }) => {
 const PanelLayout = ({ children }) => {
   return (
     <>
-    <Header />
-    {children}
-    <Footer />
+      <Header />
+      {children}
+      <Footer />
     </>
   )
 }

@@ -9,6 +9,7 @@ const Slider = ({productId}) => {
     const [images, setImages] = useState([])
     const [slide, setSlide] = useState(0)
     const chunkSize = 3;
+    const [isOpen, setIsOpen] = useState(false)
 
     useEffect(() => {
         const product = products.find(product => product.id === productId);
@@ -72,7 +73,14 @@ const Slider = ({productId}) => {
         <div className={styles.root}>
             
             <div className={styles.selectedImage}>
-                <img src={images[selected]} alt="product" />
+                <img src={images[selected]} alt="product" onClick={() => {setIsOpen(true)}}/>
+                {isOpen && (
+                        <div className={styles.root} onClick={() => {setIsOpen(false)}}>
+                            <div className={styles.gallery}>
+                                <img src={images[selected]} alt="Product" />
+                            </div>
+                        </div>
+                )}
                 <div className={styles.icon}>
                     <IconHeart size="24px" color="var(--primary-color60)" variant="outline"/>
                     <IconSend size="24px" color="var(--primary-color60)" variant="outline"/>

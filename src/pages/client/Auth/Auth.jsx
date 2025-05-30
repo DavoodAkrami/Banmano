@@ -18,6 +18,7 @@ import { useNavigate } from 'react-router-dom';
 import links from '../../../routes/links';
 import { UserContext } from '../../../context/UsersContext';
 
+
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -55,7 +56,7 @@ const Login = () => {
                 localStorage.setItem('token', data.token);
                 localStorage.setItem('user', JSON.stringify(data.user));
                 setUser(data.user);
-                navigate('/Banmano');
+                navigate(links.client.home);
             } else {
                 console.log('ورود ناموفق:', data);
                 setSuccessful('error');
@@ -151,7 +152,7 @@ const SignUp = () => {
                 localStorage.setItem('token', data.token);
                 localStorage.setItem('user', JSON.stringify(data.user));
                 setUser(data.user);
-                navigate('/Banmano');
+                navigate(links.client.home);
             } else {
                 console.log('ثبت‌نام ناموفق:', data);
                 setSuccessful('error');
@@ -215,24 +216,6 @@ const SignUp = () => {
         </Button>
         {successful === 'success' && <Alert severity="success">ثبت‌نام موفقیت‌آمیز</Alert>}
         {successful === 'error' && <Alert severity="error">ثبت‌نام ناموفق</Alert>}
-        {signUpData && (
-          <Box sx={{ mt: 2, p: 2, bgcolor: 'background.paper', borderRadius: 1, boxShadow: 1 }}>
-            <Typography variant="subtitle1" gutterBottom fontWeight="bold">
-              اطلاعات ثبت‌نام:
-            </Typography>
-            <List dense>
-                <ListItem>
-                    <ListItemText primary={`نام: ${signUpData.user.name}`} />
-                </ListItem>
-                <ListItem>
-                    <ListItemText primary={`ایمیل: ${signUpData.user.email}`} />
-                </ListItem>
-                <ListItem>
-                    <ListItemText primary={`ادمین: ${signUpData.user.isAdmin ? 'بله' : 'خیر'}`} />
-                </ListItem>
-            </List>
-          </Box>
-        )}
       </Box>
     </Box>
     )

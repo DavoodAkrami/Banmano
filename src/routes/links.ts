@@ -2,12 +2,13 @@ import Product from "../data/products";
 
 const links = {
     client: {
-        home: "Banmano/",
-        auth: "Banmano/auth",
-        product: "/product/:productId",
+        home: "/",
+        auth: "/auth",
+        product: "/:productId",
+        ai: "/ai-chat"
     },
     panel: {
-        panel: "Banmano/panel",
+        panel: "/panel",
     },
 }
 

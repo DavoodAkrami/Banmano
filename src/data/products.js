@@ -18,12 +18,11 @@ const Products = [
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
         imageUrl: [
-            "https://s3-alpha-sig.figma.com/img/a1f1/9d9f/aea680c3b1c86df51fe1354d64ab6273?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=POzDKOBPpNdGXFfdBuzl7YbpXsmhuBnBa~6rUc0ruDP4zF2Bi6YJIlMATXdICbm8PvYZw8yOFj6pWkMPYNXmzdJYZW~YbkAs4EvU29nJE812AlnDT4t68zm~qzGirmXwPHIEClJ1Yok55cWYbEkNc7x2b01IrfJeNBAJoXQsuFEwux0b7uMnAaOOzVKDpMFxnmtM8bitL3PwiHsDQCmKLcWdD7fCMUHZSntaWV6D533YbN5vKIsYhwdCW3IhYvU-O17haogPK4NC2H9NmpF-0U9Er4-SfHSP3K6X1MWW8T65E9yISy9PAPnr3TRGyz1INmStuR7ZHH0iW7cNMUHWnw__",
-            "https://s3-alpha-sig.figma.com/img/a1f1/9d9f/aea680c3b1c86df51fe1354d64ab6273?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=POzDKOBPpNdGXFfdBuzl7YbpXsmhuBnBa~6rUc0ruDP4zF2Bi6YJIlMATXdICbm8PvYZw8yOFj6pWkMPYNXmzdJYZW~YbkAs4EvU29nJE812AlnDT4t68zm~qzGirmXwPHIEClJ1Yok55cWYbEkNc7x2b01IrfJeNBAJoXQsuFEwux0b7uMnAaOOzVKDpMFxnmtM8bitL3PwiHsDQCmKLcWdD7fCMUHZSntaWV6D533YbN5vKIsYhwdCW3IhYvU-O17haogPK4NC2H9NmpF-0U9Er4-SfHSP3K6X1MWW8T65E9yISy9PAPnr3TRGyz1INmStuR7ZHH0iW7cNMUHWnw__",
-            "https://s3-alpha-sig.figma.com/img/a1f1/9d9f/aea680c3b1c86df51fe1354d64ab6273?Expires=1746403200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=POzDKOBPpNdGXFfdBuzl7YbpXsmhuBnBa~6rUc0ruDP4zF2Bi6YJIlMATXdICbm8PvYZw8yOFj6pWkMPYNXmzdJYZW~YbkAs4EvU29nJE812AlnDT4t68zm~qzGirmXwPHIEClJ1Yok55cWYbEkNc7x2b01IrfJeNBAJoXQsuFEwux0b7uMnAaOOzVKDpMFxnmtM8bitL3PwiHsDQCmKLcWdD7fCMUHZSntaWV6D533YbN5vKIsYhwdCW3IhYvU-O17haogPK4NC2H9NmpF-0U9Er4-SfHSP3K6X1MWW8T65E9yISy9PAPnr3TRGyz1INmStuR7ZHH0iW7cNMUHWnw__",
-            "https://s3-alpha-sig.figma.com/img/6933/efdc/04a892340894814b99ad6fbccc9164a7?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=MWzcNbNfLmEwlWzZzCR4SsU4SC4tr-O9hwtK8ajHdYDrr6ez3Ilyg0hdbyNkcIkyVc7s1ETxeBledbCp3a6m~wXcWNOkMHCvraX0Uf5BaV2f-kHuAc863DPTRH2d5~DO8pO27xl8prUgkkR9G6FEeNjMB1ZTuarLrP-cOtlegMIp2wXQPnB4gkT1LVRSi0slGdlQx17l9255m7RDJbEfH5tLAXgn-oQMhPZ7DqxLo3it1aRFO1iQHWIIgSsCqhdRiIjqMGKg0BdJBGEXTlHTC72XZOfz1ea4JhkfjORCyU1Np2w0EFmUZyoF1~ar4nb0wnzj6MFigv9Uq8X8b6WYvA__",
-            "https://s3-alpha-sig.figma.com/img/7bc9/73ed/025b7dffc54e7bf84aae81dc7cf09932?Expires=1742774400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=q5VaunlOzd4cbzG4kVQAmEAy09Br5U6DLJ2N8uGYd04y7o9CPrPWr4CN2LIBYArkZIT1fS6MspFBmfYVhHZAazXxEwY9d26KnQJ3N5w7hOQqMKBh~IIf-sTgKOd3tjJ8Tx-xe2DRX~W~RjA4aW2~GoanXE2~KoxQZV6W-wvqPxlKxYV7UXKnP7WpZ9LZSKCvT3wPJ60Fdewjc4JJhfjNDGscgxtexNdYz7zTP3Srw0z19atZc1b69Fi5VAUi3TujYMgRksIQ8wHqG7s9DUfx~av6~j4x2jU2AEZ9ybK0hd~wvOY3q-EET1zQ2SggDIasiUkPepZC4WjjFAIonvjE1w__",
-            
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000"
         ]
     },
     {
@@ -41,9 +40,11 @@ const Products = [
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
         imageUrl: [
-            "../assest/images/lavazza-coffee-beans-1.png",
-            "../assest/images/lavazza-coffee-beans-2.png",
-            "../assest/images/lavazza-coffee-beans-3.png"
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000"
         ]
     },
     {
@@ -61,9 +62,11 @@ const Products = [
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
         imageUrl: [
-            "../../images/products/coffee-beans/illy-coffee-beans-1.png",
-            "../../images/products/coffee-beans/illy-coffee-beans-2.png",
-            "../../images/products/coffee-beans/illy-coffee-beans-3.png"
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000"
         ]
     },
     {
@@ -81,9 +84,11 @@ const Products = [
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
         imageUrl: [
-            "../../images/products/coffee-beans/segafredo-coffee-beans-1.png",
-            "../../images/products/coffee-beans/segafredo-coffee-beans-2.png",
-            "../../images/products/coffee-beans/segafredo-coffee-beans-3.png"
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000"
         ]
     },
     {
@@ -101,9 +106,11 @@ const Products = [
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
         imageUrl: [
-            "../../images/products/coffee-beans/kimbo-coffee-beans-1.png",
-            "../../images/products/coffee-beans/kimbo-coffee-beans-2.png",
-            "../../images/products/coffee-beans/kimbo-coffee-beans-3.png"
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000"
         ]
     },
     {
@@ -121,9 +128,11 @@ const Products = [
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
         imageUrl: [
-            "../../images/products/coffee-beans/mehmet-coffee-beans-1.png",
-            "../../images/products/coffee-beans/mehmet-coffee-beans-2.png",
-            "../../images/products/coffee-beans/mehmet-coffee-beans-3.png"
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000"
         ]
     },
     {
@@ -141,9 +150,11 @@ const Products = [
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
         imageUrl: [
-            "../../images/products/coffee-beans/pele-coffee-beans-1.png",
-            "../../images/products/coffee-beans/pele-coffee-beans-2.png",
-            "../../images/products/coffee-beans/pele-coffee-beans-3.png"
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000"
         ]
     },
     {
@@ -161,9 +172,11 @@ const Products = [
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
         imageUrl: [
-            "../../images/products/coffee-beans/bonjourno-coffee-beans-1.png",
-            "../../images/products/coffee-beans/bonjourno-coffee-beans-2.png",
-            "../../images/products/coffee-beans/bonjourno-coffee-beans-3.png"
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000"
         ]
     },
     {
@@ -181,9 +194,11 @@ const Products = [
         category: category_coffeebeans_name,
         categoryId: category_coffeebeans_id,
         imageUrl: [
-            "../../images/products/coffee-beans/danesi-coffee-beans-1.png",
-            "../../images/products/coffee-beans/danesi-coffee-beans-2.png",
-            "../../images/products/coffee-beans/danesi-coffee-beans-3.png"
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000"
         ]
     },
     {
@@ -201,9 +216,11 @@ const Products = [
         category: category_instantcoffee_name,
         categoryId: category_instantcoffee_id,
         imageUrl: [
-            "../../images/products/instant-coffee/nescafe-gold-1.png",
-            "../../images/products/instant-coffee/nescafe-gold-2.png",
-            "../../images/products/instant-coffee/nescafe-gold-3.png"
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000"
         ]
     },
     {
@@ -221,9 +238,11 @@ const Products = [
         category: category_instantcoffee_name,
         categoryId: category_instantcoffee_id,
         imageUrl: [
-            "../../images/products/instant-coffee/jacobs-1.png",
-            "../../images/products/instant-coffee/jacobs-2.png",
-            "../../images/products/instant-coffee/jacobs-3.png"
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000"
         ]
     },
     {
@@ -240,9 +259,11 @@ const Products = [
         category: category_instantcoffee_name,
         categoryId: category_instantcoffee_id,
         imageUrl: [
-            "../../images/products/instant-coffee/multi-cafe-1.png",
-            "../../images/products/instant-coffee/multi-cafe-2.png",
-            "../../images/products/instant-coffee/multi-cafe-3.png"
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000"
         ]
     },
     {
@@ -260,9 +281,11 @@ const Products = [
         category: category_groundcoffee_name,
         categoryId: category_groundcoffee_id,
         imageUrl: [
-            "../../images/products/ground-coffee/lavazza-ground-1.png",
-            "../../images/products/ground-coffee/lavazza-ground-2.png",
-            "../../images/products/ground-coffee/lavazza-ground-3.png"
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000"
         ]
     },
     {
@@ -280,9 +303,11 @@ const Products = [
         category: category_groundcoffee_name,
         categoryId: category_groundcoffee_id,
         imageUrl: [
-            "../../images/products/ground-coffee/illy-ground-1.png",
-            "../../images/products/ground-coffee/illy-ground-2.png",
-            "../../images/products/ground-coffee/illy-ground-3.png"
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000"
         ]
     },
     {
@@ -300,9 +325,11 @@ const Products = [
         category: category_groundcoffee_name,
         categoryId: category_groundcoffee_id,
         imageUrl: [
-            "../../images/products/ground-coffee/segafredo-ground-1.png",
-            "../../images/products/ground-coffee/segafredo-ground-2.png",
-            "../../images/products/ground-coffee/segafredo-ground-3.png"
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000",
+            "https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?q=80&w=1000"
         ]
     }
 ]
